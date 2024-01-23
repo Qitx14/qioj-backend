@@ -19,7 +19,7 @@ spring:
   # todo 需替换配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/my_db
+    url: jdbc:mysql://localhost:3306/qioj
     username: root
     password: xs20021231
   # Redis 配置
@@ -43,7 +43,7 @@ spring:
       max-file-size: 10MB
 server:
   address: 0.0.0.0
-  port: 8101
+  port: 8121
   servlet:
     context-path: /api
     # cookie 30 天过期
@@ -98,4 +98,4 @@ knife4j:
       default:
         api-rule: package
         api-rule-resources:
-          - com.qitx.springbootinit.controller
+          - com.qitx.qioj.controller
